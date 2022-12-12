@@ -75,10 +75,24 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+'''
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'AqycS7fvw475btc4IMIM',
+        'HOST': 'containers-us-west-98.railway.app',
+        'PORT': '6326',
     }
 }
 
